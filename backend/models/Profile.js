@@ -16,7 +16,6 @@ const ProfileSchema = new mongoose.Schema({
 			},
 			fieldofstudy: {
 				type: String,
-				required: true,
 			},
 			from: {
 				type: Date,
@@ -74,6 +73,27 @@ const ProfileSchema = new mongoose.Schema({
 			},
 		},
 	],
+	experience: [
+		{
+			title: {
+				type: String,
+				required: true,
+			},
+			company: {
+				type: String,
+			},
+			from: {
+				type: Date,
+			},
+			to: {
+				type: Date,
+			},
+			description: {
+				type: String,
+			},
+		},
+	],
+
 	socials: {
 		youtube: {
 			type: String,
