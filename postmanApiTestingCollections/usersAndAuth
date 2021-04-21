@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "cb710c17-2540-4ef5-bae4-e3d8e672ae60",
+		"name": "Users&Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-rapidapi-key",
+						"value": "3103accff4mshf552edb701c8b37p1fb28ejsn9b617ff120dc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-rapidapi-host",
+						"value": "apidojo-yahoo-finance-v1.p.rapidapi.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "useQueryString",
+						"value": "true",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDY5ZjY4YWRkZjdmMTIwMDg1Y2MyNGEiLCJpYXQiOjE2MTc1NTg4OTl9.WW5yUbA4nTfN039cT0dSqrzxditv3Zr_IUeRpR0dfSg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Abhishek\",\r\n    \"email\":\"abhishekagrawal88@gmail.com\",\r\n    \"password\":\"iskplove\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Auth User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA3Y2EyNjgyMDhmNTgzNDA4NjAyNWRkIn0sImlhdCI6MTYxODc4MDc3NiwiZXhwIjoxNjE5MTQwNzc2fQ.9P7Bz26Ron8bhMc-3q2jCeOWiCg7IN4AM4Ru4piSmPc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"abhishekagrawal88ads@gmail.com\",\r\n    \"password\":\"iskplove\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
